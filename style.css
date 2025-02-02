@@ -6,11 +6,13 @@
 }
 @font-face {
     font-family: Figtree;
-    src: 
-    local("Figtree"),
-    url(/fonts/Figtree.ttf) format(TrueType);
+    src:
+        local("Figtree"),
+        url(/fonts/Figtree.ttf) format(TrueType);
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -29,7 +31,7 @@ body {
     align-items: center;
     font-size: 15px;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Figtree', sans-serif;
+    font-family: "Figtree", sans-serif;
     font-size: 16px;
     background-color: var(--primary-yellow);
 }
@@ -42,24 +44,12 @@ body {
     padding: 1.25rem;
     border-radius: 20px;
     border: 1px solid var(--neutral-black);
-    position: relative;
-}
-
-.card::before {
-    content: '';
-    position: absolute;
-    background-color: var(--neutral-black);
-    border-radius: 20px;
-    left: 15px;
-    top: 15px;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+    box-shadow: 8px 8px 0px 0px #000;
 }
 
 .card-info {
     display: grid;
-    gap: 1rem; 
+    gap: 1rem;
 }
 
 .hero-image {
@@ -85,7 +75,7 @@ h1:hover {
     cursor: pointer;
 }
 p {
-    color: var(--neutral-grey)
+    color: var(--neutral-grey);
 }
 .author {
     display: flex;
